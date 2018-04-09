@@ -142,7 +142,7 @@ function getReadArgs(src, options) {
 }
 
 function spawnRead(args) {
-	return ffmpeg(args, { detached: true, encoding: "binary" });
+	return ffmpeg(args, { detached: false, encoding: "binary" });
 }
 
 function getWriteArgs(src, dst, data, options) {
