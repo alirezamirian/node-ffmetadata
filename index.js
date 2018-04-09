@@ -232,6 +232,5 @@ function escapeini(data) {
 }
 
 function unescapeini(data) {
-	// @TODO
-	return data;
+	return data ? data.replace(/\\=/, '=') : data;
 }
